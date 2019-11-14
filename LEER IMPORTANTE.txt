@@ -1,0 +1,29 @@
+funciones que tiene la pagina web 
+
+- varios sliders con ejemplos y definiciones sobre PHP 
+- un video explicativo introductorio a PHP
+- guia para instalar PHP y sus requisitos
+
+- sistemas de registro y login de usuarios
+
+- funcion para cerrar la session activa
+
+- seguridad basada en Json web tokens 
+
+- tabs , links y otros mscelaneos adornados con css 
+
+- base de datos NO-SQL mongodb
+
+
+requisitos previos para que funcione la pagina de forma local 
+
+-tener instalado mongoDB en local 
+
+-abrir la carpeta principal con una terminal de windows o linux y escribir el comando "npm start" sin comillas 
+seguidamente la terminal debe lanzar un mensaje diciendo "server running on port 3000"
+
+-acto seguido ir a un navegador web cualquiera y escribir en la barra de navegacion "http://localhost:3000/"
+para entrar a la pagina y poder crearse un usuario  y usar la pagina 
+
+- el usuario se puede crear con cualquier nombre de usuario y correo y contraseña no hay ningun tipo de restriccion a los 
+caracteres que se pueden utilizar

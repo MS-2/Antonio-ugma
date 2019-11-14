@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="stylesheets/style.css">
+  </head>
+  <body>
+    {{{body}}}
+  </body>
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="/javascripts/jquery.slides.min.js"></script>
+  <script></script>
+  
+	<script>
+	$(function(){
+  $(".slides").slidesjs({
+    play: {
+      active: false,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 1000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: false,
+        // [boolean] Start playing the slideshow on load.
+      swap: false,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: true,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 1000
+        // [number] restart delay on inactive slideshow
+    },
+    navigation: {
+      active: false,
+        // [boolean] Generates next and previous buttons.
+        // You can set to false and use your own buttons.
+        // User defined buttons must have the following:
+        // previous button: class="slidesjs-previous slidesjs-navigation"
+        // next button: class="slidesjs-next slidesjs-navigation"
+      effect: "slide"
+        // [string] Can be either "slide" or "fade".
+    },
+    pagination: {
+      active: true,
+        // [boolean] Create pagination items.
+        // You cannot use your own pagination. Sorry.
+      effect: "slide"
+        // [string] Can be either "slide" or "fade".
+    }
+  });
+});
+
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
+
+
+	</script>
+</html>

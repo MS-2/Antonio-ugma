@@ -1,0 +1,31 @@
+. en la carpeta views: estan todas las paginas que muestran contenido de la pagina web 
+
+. la carpeta tablas: tiene el archivo user que es el que crea al usuario en la base de datos 
+
+. la carpeta routes: sirve para crear las diferentes direcciones en la barra de navegador como
+			el www.mipaginaweb.com/login 
+
+. la carpeta querys: tiene dos archivos que controlan diferentes scripts de la pagina como
+			el evitar que entren usuarios no registrados, la seguridad, cerrar session
+			las funciones de botones 
+
+. la carpeta public: la carpeta de css que es la que le da "colorcito" a toda la pagina web y 
+			la carpeta javascript que tiene un script llamado slider que es con el 
+			que se le da funcionalidad al slider , tambien tiene las imagenes que se usan
+			en los sliders.
+
+
+. la carpeta node_modules: tiene muchas carpetas y librerias que son necesarias para que funcione la app
+				NO TOCAR nada de alli
+
+. la carpeta bin: es la que permite subir la pagina a servidores de internet
+
+. el archivo package.json : es de suma importancia guarda un respaldo de las librerias
+				de la pagina y tambien permite controlar comandos basicos
+				el mas importante es "npm start" que es con el que se arranca 
+				la pagina
+
+. por ultimo el archivo app.js: este levanta un servidor local para que se pueda abrir 
+				la pagina aun sin internet y le dice a las demas carpetas 
+				que deben hacer.
+	
