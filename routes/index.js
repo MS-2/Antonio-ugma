@@ -26,6 +26,8 @@ router.get('/', controller.listar);
 
  router.get('/funciones', controller.mostrarFunciones );
 
+ router.get('/interprete', controller.mostrarInterprete );
+
 
 // USUARIOS
 
