@@ -18,6 +18,9 @@ module.exports = {
     mostrarPrimitivos: async(req,res)=> {
       res.render('primitivos');
     },
+    mostrarInterprete: async(req,res)=> {
+      res.render('interprete');
+    },
     listar: async(req,res)=> {
       res.render('index');
     },
