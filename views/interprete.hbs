@@ -1,0 +1,55 @@
+  	<div class="caja2">
+  	<div style="margin:5px 5px 5px 5px; color: white">
+		<h2>INTERPRETE </h2>
+    </div>
+       
+  </div>
+   <a class="w3-bar-item w3-button w3-btn" href="/principal" style="color: white;" >PRINCIPAL</a>
+
+    <div class="main">
+        <div>
+    <form title="para trabajar con cadenas de texto encierralas entre 'comillas' " action="" method="get" onsubmit="evaluar(document.getElementById('valor').value)">
+    <textarea name="message" rows="20" cols="100" id="valor">//escribe tu código debajo de esta linea.
+
+        n = 0;
+        x = 0;
+            while (n < 3) {
+            n++;
+            x += n;
+            }
+                    </textarea>
+        <input type="submit">
+    </form>
+        </div>
+    </div>
+    {{!--  alert(typeof("1"+f.valueOf())); --}}
+
+<script>
+
+    function evaluar(params) {
+
+        var t = parseInt(params,10);
+
+        if(isNaN(t)){
+            var p = eval(params);
+            if(p === undefined){
+                alert("error de sintaxis");
+            }else{
+            var f = new String(params);
+            var a = eval(f);
+            alert(a);
+            }
+          
+        }
+            
+        else    {
+            alert("numero");
+            var a = eval(params);  
+            alert(a);
+        }
+
+   
+       
+    }
+
+</script>
